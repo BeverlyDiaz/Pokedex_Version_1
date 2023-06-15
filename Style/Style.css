@@ -1,0 +1,357 @@
+/* Page et menu */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.menu img {
+  height: 50px;
+  float: left;
+}
+
+.menu {
+  background-color: black;
+  padding: 10px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.menu li {
+  float: right;
+}
+
+.menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  background-color: #f13e2d;
+  color: black;
+}
+
+/* Page Pokewiki */
+
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.container h1 {
+  font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.container .pokemon-name {
+  width: 300px;
+  height: 25px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+}
+
+button {
+
+  height: 25px;
+  width: 100px;
+  background-color: white;
+  border: 2px solid black;
+  cursor: pointer;
+
+}
+
+
+.result {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  margin-top: 50px;
+  height: 550px;
+  margin-bottom: 50px;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+  border-radius: 30px;
+}
+
+
+.result #result-pokemon-name {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.result #result-pokemon-image {
+  width: 200px;
+}
+
+.information-image {
+  margin-top: 50px;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+.information-image,
+.type {
+  display: flex;
+  flex-direction: row;
+}
+
+#type-name {
+  padding-left: 5px;
+}
+
+
+.icone-infos {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20px;
+}
+
+.type {
+  padding-bottom: 50px;
+  padding-top: 10px;
+}
+
+
+.icone-infos img {
+  padding-right: 10px;
+}
+
+#result-pokemon-image,
+.icone-infos img,
+#sprite {
+  display: none;
+}
+
+#result-type-image {
+
+  width: 20px
+}
+
+.Container-two {
+
+  background-color: lightgrey;
+  width: 100px;
+  height: 120px;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  display: none;
+
+}
+
+/* PageWiki Suggestion et PageType Resultat */
+
+.Suggestion,
+.result-type-pokemon {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+
+}
+
+.Suggestion {
+  width: 40%;
+}
+
+
+.suggestionContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+#Suggestion-title {
+
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+
+.Suggestion p {
+
+  text-align: center;
+  padding-top: 10px;
+
+}
+
+/* Page d'accueil */
+
+.carousel {
+  position: relative;
+  margin: 0 auto;
+  width: 700px;
+  height: 700px;
+  overflow: hidden;
+  margin-top: -100px;
+}
+
+.slides-container {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slide img {
+  width: 400px;
+  height: 400px;
+}
+
+.name-slide {
+
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.arrow-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow {
+  background-color: black;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.arrow:hover {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+
+.prev {
+  margin-left: 20px;
+}
+
+.next {
+  margin-right: 20px;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+  color: black;
+  font-size: 24px;
+}
+
+/* Page PokeType */
+.result-type {
+
+  background-color: lightslategray;
+  width: 200px;
+  height: 200px;
+  margin-top: 50px;
+  padding: 20px;
+
+}
+
+.result-type img {
+
+  width: 100px;
+  height: 100px;
+  display: none;
+
+}
+
+.result-type h3 {
+
+  font-size: 20px;
+
+}
+
+/* Page PokeCombat*/
+
+table.redTable {
+  border: 2px solid #A40808;
+  background-color: #D7D7D7;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.redTable td, table.redTable th {
+  border: 1px solid #AAAAAA;
+  padding: 3px 2px;
+}
+table.redTable tbody td {
+  font-size: 13px;
+}
+table.redTable tr:nth-child(even) {
+  background: white;
+}
+table.redTable thead , .Type-pokemon-ramdom {
+  background: #A40808;
+}
+
+.Type-pokemon-ramdom img {
+
+width: 20px;
+height:20px;
+}
+table.redTable thead th {
+  font-size: 19px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  border-left: 2px solid #A40808;
+}
+table.redTable thead th:first-child {
+  border-left: none;
+}
+
+table.redTable tfoot td {
+  font-size: 13px;
+}
+table.redTable tfoot .links {
+  text-align: right;
+}
+table.redTable tfoot .links a{
+  display: inline-block;
+  background: #FFFFFF;
+  color: #A40808;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+th img {
+
+width:80px;
+}

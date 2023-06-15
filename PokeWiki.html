@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Wiki</title>
+    <link rel="stylesheet" href="./Style/Style.css">
+</head>
+
+<body>
+
+
+    <div class="menu">
+        <div class="menu">
+            <img src="Image/Pokewiki/Logo.png" alt="Pokemon Wiki Logo">
+            <ul>
+
+                <li><a href="PokeCombat.html">PokeCombat</a></li>
+                <li><a href="PokeType.html">PokeType</a></li>
+                <li><a href="PokeWiki.html">PokeWiki</a></li>
+                <li><a href="PokeWorld.html">Accueil</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Pokemon Wiki</h1>
+        <input type="text" id="pokemon-name" name="pokemon-name" placeholder="Exemple : Pikachu, Luxio, Carapuce...">
+        <button id="search-button">Rechercher</button>
+    </div>
+
+    <div class="result">
+
+        <h3 id="result-pokemon-name"></h3>
+
+        <div class="information-image">
+
+            <img src="" alt="Pokemon image" srcset="" id="result-pokemon-image">
+
+            <div id="information">
+
+                <div class="type">
+                    <img src="" alt="Pokemon Type" srcset="" id="result-type-image">
+                    <p id="type-name"></p>
+                </div>
+
+                <div class="icone-infos">
+                    <img src="Image/Pokewiki/HP.png" alt="Pokemon HP" srcset="">
+                    <p id="HP"></p>
+                </div>
+                <div class="icone-infos">
+                    <img src="Image/Pokewiki/attack.png" alt="Pokemon attack" srcset="">
+                    <p id="attack"></p>
+                </div>
+                <div class="icone-infos">
+                    <img src="Image/Pokewiki/defense.png" alt="Pokemon defense" srcset="">
+                    <p id="defense"></p>
+                </div>
+
+                <div class="icone-infos">
+                    <img src="Image/Pokewiki/special_attack.png" alt="Pokemon special attack" srcset="">
+                    <p id="special_attack"></p>
+                </div>
+
+                <div class="icone-infos">
+                    <img src="Image/Pokewiki/special_defense.png" alt="Pokemon special defense" srcset="">
+                    <p id="special_defense"></p>
+                </div>
+
+                <div class="icone-infos">
+                    <img src="Image/Pokewiki/speed.png" alt="Pokemon speed" srcset="">
+                    <p id="speed"></p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <h2 id="Suggestion-title"></h2>
+
+    <div class="suggestionContainer">
+
+        <div class="Suggestion">
+
+            <div class="Suggestion-one Container-two">
+                <p id="Suggestion-one-name"></p>
+                <img src="" alt="" id="Suggestion-one-image">
+
+            </div>
+
+            <div class="Suggestion-two Container-two">
+
+                <p id="Suggestion-two-name"></p>
+                <img src="" alt="" id="Suggestion-two-image">
+
+            </div>
+
+            <div class="Suggestion-three Container-two">
+
+                <p id="Suggestion-three-name"></p>
+                <img src="" alt="" id="Suggestion-three-image">
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <script src="./JS/PokeWiki.js"></script>
+
+</body>
+
+</html>
